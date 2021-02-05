@@ -52,7 +52,11 @@ namespace CS_Console_App
 
         public void Name()
         {
-            Console.WriteLine("Name");
+            Console.WriteLine("Please enter your name.\n");
+            string name = Console.ReadLine();
+            Console.WriteLine("\nHello " + name + "!\n");
+
+            Intro();
         }
 
         public void RectArea()
