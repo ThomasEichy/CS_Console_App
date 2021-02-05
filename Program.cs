@@ -61,7 +61,7 @@ namespace CS_Console_App
 
         public void RectArea()
         {
-            Console.WriteLine("Welcome to the Rectangle Area Calculaotr.\n" +
+            Console.WriteLine("\nWelcome to the Rectangle Area Calculaotr.\n" +
             "\nPlease enter the width of the rectangle in inches.");
             double width = Convert.ToDouble(Console.ReadLine());
 
@@ -76,7 +76,17 @@ namespace CS_Console_App
 
         public void GasMiles()
         {
-            Console.WriteLine("Miles");
+            Console.WriteLine("\nWelcome to the MPG Calculator.\n" +
+            "\nPlease enter the amount of miles driven.");
+            float miles = Convert.ToSingle(Console.ReadLine());
+
+            Console.WriteLine("\nPlease enter the gallons of gas burned.");
+            float gallons = Convert.ToSingle(Console.ReadLine());
+
+            float result = miles / gallons;
+            Console.WriteLine("\nMPG: " + result + ".\n");
+
+            Intro();
         }
 
         public void Alice()
