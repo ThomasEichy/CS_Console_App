@@ -28,7 +28,7 @@ namespace CS_Console_App
             {
                 Name();
             }
-            else if (menuSelect == "rectagle area calculator")
+            else if (menuSelect == "rectangle area calculator")
             {
                 RectArea();
             }
@@ -61,7 +61,17 @@ namespace CS_Console_App
 
         public void RectArea()
         {
-            Console.WriteLine("Area");
+            Console.WriteLine("Welcome to the Rectangle Area Calculaotr.\n" +
+            "\nPlease enter the width of the rectangle in inches.");
+            double width = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("\nPlease enter the length of the rectangle in inches.");
+            double length = Convert.ToDouble(Console.ReadLine());
+
+            double result = length * width;
+            Console.WriteLine("\nRectangle Area: " + result + " inches.\n");
+
+            Intro();
         }
 
         public void GasMiles()
